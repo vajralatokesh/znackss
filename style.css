@@ -1,0 +1,155 @@
+body {
+  margin: 0;
+  background-color: #121212;
+  color: #f1f1f1;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+/* Intro Screen */
+.intro-screen {
+  position: fixed;
+  inset: 0;
+  background-color: #1e1e1e;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  flex-direction: column;
+  text-align: center;
+  transition: opacity 0.5s ease;
+}
+
+.intro-content h1 {
+  font-size: 2.5rem;
+  color: #ffcc00;
+}
+
+.intro-content .tagline {
+  margin-top: 0.5rem;
+  font-size: 1.2rem;
+  color: #ccc;
+}
+
+.intro-content button {
+  margin-top: 2rem;
+  background-color: #ffcc00;
+  color: black;
+  border: none;
+  padding: 0.7rem 1.5rem;
+  border-radius: 25px;
+  font-size: 1rem;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.intro-content button:hover {
+  background-color: #f1c40f;
+}
+
+/* Main Site */
+header {
+  background-color: #1e1e1e;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #333;
+}
+
+.logo h1 {
+  margin: 0;
+  color: #ffcc00;
+  font-size: 2rem;
+}
+
+.logo .tagline {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #ccc;
+}
+
+.cart {
+  font-size: 1.2rem;
+  background-color: #333;
+  padding: 0.4rem 0.8rem;
+  border-radius: 8px;
+}
+
+main {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 2rem;
+}
+
+.card {
+  background-color: #1e1e1e;
+  border-radius: 10px;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 0 10px #00000055;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 15px #ffcc0055;
+}
+
+.card img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  margin-bottom: 1rem;
+}
+
+.card button {
+  background-color: #ffcc00;
+  color: black;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.2s ease;
+}
+
+.card button:hover {
+  background-color: #f1c40f;
+}
+
+.checkout {
+  margin-top: 3rem;
+  text-align: center;
+}
+
+.checkout button {
+  background-color: #25d366;
+  color: white;
+  font-size: 1rem;
+  border: none;
+  border-radius: 25px;
+  padding: 0.7rem 1.5rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.checkout button:hover {
+  background-color: #1ebd5a;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+  color: #aaa;
+  border-top: 1px solid #333;
+  margin-top: 2rem;
+}
